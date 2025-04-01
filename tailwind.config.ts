@@ -64,7 +64,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				conference: {
-					yellow: '#FFD700',
+					yellow: '#FFF1A1', // Lighter yellow
+					darkyellow: '#FFD700', // Original yellow kept for reference
 					white: '#FFFFFF',
 					darkgray: '#333333',
 					lightgray: '#F5F5F5',
