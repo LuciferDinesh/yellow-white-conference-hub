@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CalendarDays, Clock, MapPin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -49,9 +50,9 @@ const Hero = () => {
       {/* Top navigation */}
       <div className="relative z-10 flex justify-between items-center px-4 md:px-12 py-4">
         <div className="flex items-center">
-          {/* Placeholder for the college logo */}
+          {/* Updated with your college logo */}
           <img 
-            src="/lovable-uploads/34dc01af-b94a-455d-b8b0-410c1d487411.png" 
+            src="/lovable-uploads/57101aa7-e9a4-42dc-a10c-79652d8a078e.png" 
             alt="College Logo" 
             className="h-16 md:h-20"
           />
@@ -69,7 +70,7 @@ const Hero = () => {
       {/* Hero content */}
       <div className="relative z-10 text-center px-4 md:px-0 py-16 md:py-24 max-w-5xl mx-auto">
         <div className="mb-6">
-          <p className="text-amber-300 text-xl md:text-2xl font-semibold mb-2">ANRF Sponsored</p>
+          <p className="text-conference-lightyellow text-xl md:text-2xl font-semibold mb-2">ANRF Sponsored</p>
           <h2 className="text-2xl md:text-3xl font-bold mb-2">International Conference on</h2>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gradient-green">
             Emerging Electronics and<br />Sustainability
@@ -83,8 +84,12 @@ const Hero = () => {
           <span className="font-bold">9<sup>th</sup> - 10<sup>th</sup></span> April 2025
         </p>
         
-        <Link to="/registration" className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors">
-          Register
+        <Link to="/registration">
+          <Button 
+            className="bg-conference-yellow hover:bg-amber-400 text-conference-darkgray font-bold py-3 px-8 rounded-full text-lg transition-colors"
+          >
+            Register Now
+          </Button>
         </Link>
         
         {/* Countdown timer */}
@@ -106,16 +111,16 @@ const Hero = () => {
         borderTopRightRadius: '50% 100%' 
       }}></div>
       
-      {/* Event details section */}
-      <div className="relative bg-white text-gray-800 pt-24 pb-16">
+      {/* Event details section - Updated with better styling */}
+      <div className="relative bg-white text-gray-800 pt-20 pb-16">
         <div className="conference-container">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="flex items-start">
-              <div className="bg-red-600 p-3 rounded-lg mr-4">
-                <MapPin size={24} className="text-white" />
+              <div className="bg-conference-red p-4 rounded-lg mr-4 flex items-center justify-center">
+                <MapPin size={28} className="text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Where is the Event:</h3>
+                <h3 className="text-xl font-bold mb-2 text-conference-darkgray">Where is the Event:</h3>
                 <p className="text-gray-600">
                   University Campus, Green Fields,<br />
                   District, State, Country.<br />
@@ -125,11 +130,11 @@ const Hero = () => {
             </div>
             
             <div className="flex items-start">
-              <div className="bg-gray-700 p-3 rounded-lg mr-4">
-                <CalendarDays size={24} className="text-white" />
+              <div className="bg-conference-darkblue p-4 rounded-lg mr-4 flex items-center justify-center">
+                <CalendarDays size={28} className="text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">When is the Event:</h3>
+                <h3 className="text-xl font-bold mb-2 text-conference-darkgray">When is the Event:</h3>
                 <p className="text-gray-600">9th & 10th April 2025.</p>
               </div>
             </div>
@@ -142,14 +147,14 @@ const Hero = () => {
 
 // Helper components
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
-  <Link to={href} className="text-white hover:text-amber-200 font-medium transition-colors">
+  <Link to={href} className="text-conference-lightyellow hover:text-white font-medium transition-colors">
     {children}
   </Link>
 );
 
 const CountdownItem = ({ value, label }: { value: string, label: string }) => (
   <div className="flex flex-col items-center">
-    <div className="text-3xl md:text-5xl font-bold text-pink-300">{value}</div>
+    <div className="text-3xl md:text-5xl font-bold text-conference-lightyellow">{value}</div>
     <div className="text-sm md:text-base text-gray-200">{label}</div>
   </div>
 );

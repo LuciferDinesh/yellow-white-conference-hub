@@ -65,10 +65,13 @@ export default {
 				},
 				conference: {
 					yellow: '#FFF1A1', // Lighter yellow
+					lightyellow: '#FFF8D6', // Even lighter yellow
 					darkyellow: '#FFD700', // Original yellow kept for reference
 					white: '#FFFFFF',
 					darkgray: '#333333',
 					lightgray: '#F5F5F5',
+					red: '#e53935', // For the icon backgrounds
+					darkblue: '#2c3e50', // For the icon backgrounds
 				}
 			},
 			borderRadius: {
