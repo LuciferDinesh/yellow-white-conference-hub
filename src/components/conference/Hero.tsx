@@ -38,11 +38,11 @@ const Hero = () => {
 
   return (
     <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white overflow-hidden">
-      {/* Background circuit pattern overlay */}
+      {/* Updated background image more relevant to biomedical engineering */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-40" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1200&q=60')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVkaWNhbCUyMHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1200&q=60')",
           backgroundBlendMode: "overlay"
         }}
       />
@@ -50,7 +50,7 @@ const Hero = () => {
       {/* Top navigation */}
       <div className="relative z-10 flex justify-between items-center px-4 md:px-12 py-4">
         <div className="flex items-center">
-          {/* Updated with your college logo */}
+          {/* College logo */}
           <img 
             src="/lovable-uploads/57101aa7-e9a4-42dc-a10c-79652d8a078e.png" 
             alt="College Logo" 
