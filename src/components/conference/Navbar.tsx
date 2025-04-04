@@ -2,15 +2,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import { 
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle
-} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,12 +9,12 @@ const Navbar = () => {
   return (
     <nav className="bg-conference-yellow border-b border-amber-400 shadow-sm z-50">
       <div className="conference-container">
-        <div className="flex justify-between items-center py-2">
+        <div className="flex justify-between items-center py-3">
           <Link to="/" className="font-bold text-2xl text-conference-darkgray">
-            ICBEAIMLNIT-2K25
+            ICEES-2025
           </Link>
           
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Primary Menu */}
           <div className="hidden md:flex space-x-8">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About</NavLink>

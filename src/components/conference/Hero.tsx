@@ -38,11 +38,11 @@ const Hero = () => {
 
   return (
     <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white overflow-hidden">
-      {/* Updated background image more relevant to biomedical engineering */}
+      {/* Updated background image with cells/medical visualization */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-40" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVkaWNhbCUyMHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1200&q=60')",
+          backgroundImage: "url('/lovable-uploads/0cde40cf-a43a-4ff1-b940-67efa93ffc49.png')",
           backgroundBlendMode: "overlay"
         }}
       />
@@ -111,7 +111,7 @@ const Hero = () => {
         borderTopRightRadius: '50% 100%' 
       }}></div>
       
-      {/* Event details section - Updated styling */}
+      {/* Event details section */}
       <div className="relative bg-white text-gray-800 pt-20 pb-16">
         <div className="conference-container">
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">

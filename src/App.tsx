@@ -12,6 +12,7 @@ import CommitteesPage from "./pages/CommitteesPage";
 import ContactPage from "./pages/ContactPage";
 import SubmissionFormPage from "./pages/SubmissionFormPage";
 import RegistrationFormPage from "./pages/RegistrationFormPage";
+import TestDatabasePage from "./pages/TestDatabasePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/submission-form" element={<SubmissionFormPage />} />
           <Route path="/registration-form" element={<RegistrationFormPage />} />
+          <Route path="/test-database" element={<TestDatabasePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
