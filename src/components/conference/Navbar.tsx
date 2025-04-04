@@ -2,16 +2,25 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { 
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-conference-yellow shadow-md">
+    <nav className="bg-conference-yellow border-b border-amber-400 shadow-sm z-50">
       <div className="conference-container">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2">
           <Link to="/" className="font-bold text-2xl text-conference-darkgray">
-            ICEES-2025
+            ICBEAIMLNIT-2K25
           </Link>
           
           {/* Desktop Navigation */}

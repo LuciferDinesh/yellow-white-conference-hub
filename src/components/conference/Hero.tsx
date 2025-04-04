@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { CalendarDays, Clock, MapPin } from 'lucide-react';
+import { CalendarDays, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -47,7 +47,7 @@ const Hero = () => {
         }}
       />
       
-      {/* Top navigation */}
+      {/* Secondary navigation */}
       <div className="relative z-10 flex justify-between items-center px-4 md:px-12 py-4">
         <div className="flex items-center">
           {/* College logo */}
@@ -59,11 +59,11 @@ const Hero = () => {
         </div>
         
         <nav className="hidden md:flex space-x-8">
-          <NavLink href="/call-for-papers">Call For Papers</NavLink>
-          <NavLink href="/registration">Registration</NavLink>
-          <NavLink href="/committees">Committees</NavLink>
-          <NavLink href="/speakers">Speakers</NavLink>
-          <NavLink href="/contact">Contact Us</NavLink>
+          <SecondaryNavLink href="/call-for-papers">Call For Papers</SecondaryNavLink>
+          <SecondaryNavLink href="/registration">Registration</SecondaryNavLink>
+          <SecondaryNavLink href="/committees">Committees</SecondaryNavLink>
+          <SecondaryNavLink href="/speakers">Speakers</SecondaryNavLink>
+          <SecondaryNavLink href="/contact">Contact Us</SecondaryNavLink>
         </nav>
       </div>
       
@@ -116,7 +116,7 @@ const Hero = () => {
         <div className="conference-container">
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="flex items-start">
-              <div className="bg-conference-lightyellow p-4 rounded-lg mr-4 flex items-center justify-center">
+              <div className="bg-conference-yellow p-4 rounded-lg mr-4 flex items-center justify-center">
                 <MapPin size={28} className="text-conference-darkgray" />
               </div>
               <div>
@@ -130,7 +130,7 @@ const Hero = () => {
             </div>
             
             <div className="flex items-start">
-              <div className="bg-conference-lightyellow p-4 rounded-lg mr-4 flex items-center justify-center">
+              <div className="bg-conference-yellow p-4 rounded-lg mr-4 flex items-center justify-center">
                 <CalendarDays size={28} className="text-conference-darkgray" />
               </div>
               <div>
@@ -146,8 +146,8 @@ const Hero = () => {
 };
 
 // Helper components
-const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
-  <Link to={href} className="text-conference-lightyellow hover:text-white font-medium transition-colors">
+const SecondaryNavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
+  <Link to={href} className="text-white hover:text-conference-lightyellow font-medium transition-colors">
     {children}
   </Link>
 );
