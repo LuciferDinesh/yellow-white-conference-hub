@@ -72,11 +72,11 @@ const Hero = () => {
         <div className="mb-6">
           <p className="text-conference-lightyellow text-xl md:text-2xl font-semibold mb-2">ANRF Sponsored</p>
           <h2 className="text-2xl md:text-3xl font-bold mb-2">International Conference on</h2>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gradient-green">
-            Emerging Electronics and<br />Sustainability
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-gradient-green">
+            Biomedical Engineering: AI and ML<br />in Non Invasive Techniques
           </h1>
-          <h1 className="text-5xl md:text-7xl font-bold text-white">
-            ICEES-2025
+          <h1 className="text-4xl md:text-6xl font-bold text-white">
+            ICBEAIMLNIT-2K25
           </h1>
         </div>
         
@@ -86,7 +86,7 @@ const Hero = () => {
         
         <Link to="/registration">
           <Button 
-            className="bg-conference-yellow hover:bg-amber-400 text-conference-darkgray font-bold py-3 px-8 rounded-full text-lg transition-colors"
+            className="bg-conference-lightyellow hover:bg-amber-400 text-conference-darkgray font-bold py-3 px-8 rounded-full text-lg transition-colors"
           >
             Register Now
           </Button>
@@ -111,13 +111,13 @@ const Hero = () => {
         borderTopRightRadius: '50% 100%' 
       }}></div>
       
-      {/* Event details section - Updated with better styling */}
+      {/* Event details section - Updated styling */}
       <div className="relative bg-white text-gray-800 pt-20 pb-16">
         <div className="conference-container">
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="flex items-start">
-              <div className="bg-conference-red p-4 rounded-lg mr-4 flex items-center justify-center">
-                <MapPin size={28} className="text-white" />
+              <div className="bg-conference-lightyellow p-4 rounded-lg mr-4 flex items-center justify-center">
+                <MapPin size={28} className="text-conference-darkgray" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2 text-conference-darkgray">Where is the Event:</h3>
@@ -130,8 +130,8 @@ const Hero = () => {
             </div>
             
             <div className="flex items-start">
-              <div className="bg-conference-darkblue p-4 rounded-lg mr-4 flex items-center justify-center">
-                <CalendarDays size={28} className="text-white" />
+              <div className="bg-conference-lightyellow p-4 rounded-lg mr-4 flex items-center justify-center">
+                <CalendarDays size={28} className="text-conference-darkgray" />
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2 text-conference-darkgray">When is the Event:</h3>
